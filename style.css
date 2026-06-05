@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pixel by Swaraj - Premium Photography & Videography Services. Capture your story with professional wedding, event, and commercial photography.">
+    <meta name="keywords" content="photography, videography, wedding photography, event photography, professional photographer">
+    <meta name="author" content="Pixel by Swaraj">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Pixel by Swaraj - Professional Photography & Videography">
+    <meta property="og:description" content="Capture your story with premium photography and videography services.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    
+    <title>Pixel by Swaraj - Professional Photography & Videography</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo-wrapper">
+                <img src="images/logo.png" alt="Pixel by Swaraj Logo" class="logo">
+            </div>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="https://wa.me/91XXXXXXXXXX?text=Hi%20Swaraj%2C%20I%20am%20interested%20in%20your%20photography%2Fvideography%20services.%20Please%20share%20details." class="nav-cta" target="_blank" rel="noopener noreferrer">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-logo-wrapper">
+                <img src="images/logo.png" alt="Pixel by Swaraj" class="hero-logo">
+            </div>
+            <h1 class="hero-title">Capture Your Story</h1>
+            <p class="hero-subtitle">With Pixel by Swaraj</p>
+            <p class="hero-description">Premium photography and videography that brings your moments to life with cinematic quality and creative storytelling.</p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/91XXXXXXXXXX?text=Hi%20Swaraj%2C%20I%20am%20interested%20in%20your%20photography%2Fvideography%20services.%20Please%20share%20details." class="btn btn-primary" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+                <a href="#portfolio" class="btn btn-secondary">View Portfolio</a>
+            </div>
+        </div>
+        <div class="hero-background">
+            <img src="images/portfolio-1.jpg" alt="Portfolio showcase" class="hero-bg-img" loading="lazy">
+            <div class="hero-overlay"></div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Portfolio</h2>
+                <p class="section-subtitle">Explore our latest work across different categories</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="wedding">Wedding</button>
+                <button class="filter-btn" data-filter="pre-wedding">Pre-Wedding</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="portraits">Portraits</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="videography">Videography</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="wedding">
+                    <img src="images/portfolio-1.jpg" alt="Wedding photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <p class="portfolio-category">Wedding</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="pre-wedding">
+                    <img src="images/portfolio-2.jpg" alt="Pre-wedding shoot" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <p class="portfolio-category">Pre-Wedding</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="events">
+                    <img src="images/portfolio-3.jpg" alt="Event photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <p class="portfolio-category">Events</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="portraits">
+                    <img src="images/portfolio-4.jpg" alt="Portrait photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <p class="portfolio-category">Portraits</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="commercial">
+                    <img src="images/portfolio-5.jpg" alt="Commercial photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <p class="portfolio-category">Commercial</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="videography">
+                    <img src="images/portfolio-6.jpg" alt="Videography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <p class="portfolio-category">Videography</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Professional solutions tailored to your needs</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📷</div>
+                    <h3 class="service-title">Wedding Photography</h3>
+                    <p class="service-description">Capture every precious moment of your wedding day with cinematic excellence and artistic direction.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💑</div>
+                    <h3 class="service-title">Pre-Wedding Shoots</h3>
+                    <p class="service-description">Romantic and creative pre-wedding photography sessions at stunning locations of your choice.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎉</div>
+                    <h3 class="service-title">Event Photography</h3>
+                    <p class="service-description">Professional coverage of corporate events, birthdays, anniversaries, and special occasions.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👤</div>
+                    <h3 class="service-title">Portrait Photography</h3>
+                    <p class="service-description">Stunning individual and group portraits with professional lighting and composition.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3 class="service-title">Commercial Shoots</h3>
+                    <p class="service-description">Product photography, corporate branding, and commercial content creation for businesses.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎬</div>
+                    <h3 class="service-title">Cinematic Videography</h3>
+                    <p class="service-description">High-quality video production with professional editing, color grading, and sound design.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎥</div>
+                    <h3 class="service-title">Reel & Short Videos</h3>
+                    <p class="service-description">Creative short-form videos optimized for social media platforms and marketing.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✨</div>
+                    <h3 class="service-title">Photo Editing & Retouching</h3>
+                    <p class="service-description">Professional color grading, retouching, and enhancement to bring out the best in every image.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Us</h2>
+                <p class="section-subtitle">What sets Pixel by Swaraj apart</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-number">01</div>
+                    <h3 class="feature-title">High-Resolution Output</h3>
+                    <p class="feature-text">Professional-grade equipment and techniques ensure your photos and videos are crisp, clear, and print-ready.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">02</div>
+                    <h3 class="feature-title">Creative Storytelling</h3>
+                    <p class="feature-text">We don't just capture moments; we tell your story with cinematic vision and artistic excellence.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">03</div>
+                    <h3 class="feature-title">Fast Delivery</h3>
+                    <p class="feature-text">Quick turnaround on edited photos and videos without compromising on quality.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">04</div>
+                    <h3 class="feature-title">Professional Editing</h3>
+                    <p class="feature-text">Premium color grading, retouching, and post-production to enhance every image and frame.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">05</div>
+                    <h3 class="feature-title">Custom Packages</h3>
+                    <p class="feature-text">Flexible and personalized service packages designed to fit your specific needs and budget.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">06</div>
+                    <h3 class="feature-title">Easy Booking</h3>
+                    <p class="feature-text">Simple WhatsApp booking process. Send your requirements and get a quick response.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Pixel by Swaraj</h2>
+                <p class="section-subtitle">A passion for visual storytelling</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p>At Pixel by Swaraj, we believe that every moment tells a story worth preserving. With years of experience in professional photography and videography, we specialize in capturing life's most significant moments with cinematic quality and artistic vision.</p>
+                    <p>Our approach combines technical expertise with creative storytelling. We pay meticulous attention to detail, from lighting and composition to color grading and post-production. Each project is tailored to reflect your unique vision and personality.</p>
+                    <p>Whether it's a wedding, corporate event, or commercial shoot, we deliver professional-grade content that exceeds expectations. Our commitment to excellence and customer satisfaction drives everything we do.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/portfolio-1.jpg" alt="About us" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Client Testimonials</h2>
+                <p class="section-subtitle">What our clients have to say</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Swaraj captured our wedding day beautifully. His attention to detail and creative direction made every moment feel cinematic. We couldn't be happier with the final photos."</p>
+                    <div class="testimonial-author">
+                        <p class="author-name">Priya & Arjun</p>
+                        <p class="author-role">Wedding Clients</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Working with Pixel by Swaraj for our product photography was exceptional. The quality of the images and the professional handling of our brand was outstanding. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <p class="author-name">Rahul Sharma</p>
+                        <p class="author-role">Business Owner</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The pre-wedding shoot with Swaraj was so much fun and the results are amazing. We got exactly the romantic and artistic photos we wanted. Best decision!"</p>
+                    <div class="testimonial-author">
+                        <p class="author-name">Neha & Vikram</p>
+                        <p class="author-role">Pre-Wedding Clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2 class="cta-title">Ready to Book Your Shoot?</h2>
+            <p class="cta-text">Send your requirements on WhatsApp and get a quick response with personalized solutions.</p>
+            <a href="https://wa.me/91XXXXXXXXXX?text=Hi%20Swaraj%2C%20I%20am%20interested%20in%20your%20photography%2Fvideography%20services.%20Please%20share%20details." class="btn btn-large" target="_blank" rel="noopener noreferrer">Inquire on WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Multiple ways to reach us</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3 class="info-title">WhatsApp</h3>
+                        <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" class="contact-link">+91 XXXXXXXXXX</a>
+                    </div>
+                    <div class="info-item">
+                        <h3 class="info-title">Instagram</h3>
+                        <a href="https://instagram.com/pixelbyswaraj" target="_blank" rel="noopener noreferrer" class="contact-link">@pixelbyswaraj</a>
+                    </div>
+                    <div class="info-item">
+                        <h3 class="info-title">Email</h3>
+                        <a href="mailto:contact@pixelbyswaraj.com" class="contact-link">contact@pixelbyswaraj.com</a>
+                    </div>
+                    <div class="info-item">
+                        <h3 class="info-title">Location</h3>
+                        <p class="contact-text">Your City, Your Country</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" id="name" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Your Phone Number" id="phone" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <select id="eventType" required class="form-input">
+                            <option value="">Select Event Type</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="pre-wedding">Pre-Wedding</option>
+                            <option value="event">Event</option>
+                            <option value="portrait">Portrait</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="videography">Videography</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" id="date" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Tell us about your project..." id="message" rows="4" class="form-input"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-btn">Send Inquiry</button>
+                    <p class="form-success-message" id="successMessage" style="display:none;">Thank you! We'll contact you shortly.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="images/logo.png" alt="Pixel by Swaraj" class="footer-logo">
+                    <p class="footer-description">Premium photography and videography capturing your story with cinematic excellence.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Follow Us</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://instagram.com/pixelbyswaraj" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                        <li><a href="mailto:contact@pixelbyswaraj.com">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pixel by Swaraj. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <img id="lightboxImage" src="" alt="Portfolio image" class="lightbox-image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
