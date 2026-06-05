@@ -199,6 +199,59 @@
             filter: brightness(1.1);
         }
 
+
+        .logo-fallback,
+        .hero-logo-fallback {
+            color: var(--color-gold);
+            font-family: var(--font-heading);
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .logo-fallback {
+            font-size: 1.05rem;
+        }
+
+        .hero-logo-fallback {
+            font-size: clamp(1.8rem, 7vw, 4rem);
+        }
+
+        .hero-logo-wrapper,
+        .footer-section:first-child {
+            align-items: flex-start;
+        }
+
+        .hero-logo-wrapper {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.75rem 1rem;
+            border: 1px solid rgba(212, 175, 55, 0.22);
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.035);
+        }
+
+        .logo,
+        .hero-logo,
+        .footer-logo {
+            display: block;
+            object-fit: contain;
+            background: transparent;
+        }
+
+        .logo {
+            max-width: 170px;
+        }
+
+        .hero-logo {
+            max-width: min(320px, 80vw);
+        }
+
+        .footer-logo {
+            max-width: 190px;
+        }
+
         .nav-menu {
             display: flex;
             list-style: none;
@@ -1263,7 +1316,8 @@
     <nav class="navbar">
         <div class="navbar-container">
             <div class="logo-wrapper">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect fill='%230a0a0a' width='200' height='200'/%3E%3Ctext x='100' y='150' font-size='32' fill='%23d4af37' text-anchor='middle' font-family='Arial'%3EPixel%3C/text%3E%3C/svg%3E" alt="Pixel by Swaraj Logo" class="logo" style="height: 50px;">
+                <img src="images/logo.png" alt="Pixel by Swaraj Logo" class="logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                <span class="logo-fallback" style="display:none;">Pixel by Swaraj</span>
             </div>
             <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
                 <span></span>
@@ -1285,7 +1339,8 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <div class="hero-logo-wrapper">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect fill='%230a0a0a' width='200' height='200'/%3E%3Ctext x='100' y='150' font-size='32' fill='%23d4af37' text-anchor='middle' font-family='Arial'%3EPixel%3C/text%3E%3C/svg%3E" alt="Pixel by Swaraj" class="hero-logo" style="height: 120px;">
+                <img src="images/logo.png" alt="Pixel by Swaraj" class="hero-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                <span class="hero-logo-fallback" style="display:none;">Pixel by Swaraj</span>
             </div>
             <h1 class="hero-title">Capture Your Story</h1>
             <p class="hero-subtitle">With Pixel by Swaraj</p>
@@ -1583,7 +1638,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect fill='%230a0a0a' width='200' height='200'/%3E%3Ctext x='100' y='150' font-size='32' fill='%23d4af37' text-anchor='middle' font-family='Arial'%3EPixel%3C/text%3E%3C/svg%3E" alt="Pixel by Swaraj" class="footer-logo" style="height: 60px;">
+                    <img src="images/logo.png" alt="Pixel by Swaraj" class="footer-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                    <span class="logo-fallback" style="display:none;">Pixel by Swaraj</span>
                     <p class="footer-description">Premium photography and videography capturing your story with cinematic excellence.</p>
                 </div>
                 <div class="footer-section">
