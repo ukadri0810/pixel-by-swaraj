@@ -658,8 +658,25 @@
         }
 
         .service-icon {
-            font-size: 3rem;
-            margin-bottom: var(--spacing-md);
+            width: 72px;
+            height: 72px;
+            margin: 0 auto var(--spacing-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(212, 175, 55, 0.08);
+            border: 1px solid rgba(212, 175, 55, 0.22);
+        }
+
+        .service-icon svg {
+            width: 38px;
+            height: 38px;
+            stroke: var(--color-gold);
+            fill: none;
+            stroke-width: 1.8;
+            stroke-linecap: round;
+            stroke-linejoin: round;
         }
 
         .service-title {
@@ -1351,42 +1368,42 @@
 
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">📷</div>
+                    <div class="service-icon"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M18 22h7l4-6h8l4 6h7a6 6 0 0 1 6 6v18a6 6 0 0 1-6 6H16a6 6 0 0 1-6-6V28a6 6 0 0 1 6-6h2z"/><circle cx="32" cy="37" r="10"/><circle cx="47" cy="29" r="1.5"/></svg></div>
                     <h3 class="service-title">Wedding Photography</h3>
                     <p class="service-description">Capture every precious moment of your wedding day with cinematic excellence and artistic direction.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">💑</div>
+                    <div class="service-icon"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M32 50s-18-10.8-18-24a9.5 9.5 0 0 1 17-5.8A9.5 9.5 0 0 1 48 26c0 13.2-16 24-16 24z"/><path d="M24 20c2-3 5-5 8-5s6 2 8 5"/></svg></div>
                     <h3 class="service-title">Pre-Wedding Shoots</h3>
                     <p class="service-description">Romantic and creative pre-wedding photography sessions at stunning locations of your choice.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🎉</div>
+                    <div class="service-icon"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M18 48l8-30 20 20-28 10z"/><path d="M26 18l20 20"/><path d="M42 14l4-4"/><path d="M48 24h6"/><path d="M34 10v6"/><path d="M50 14l4 4"/><path d="M18 48l10-10"/></svg></div>
                     <h3 class="service-title">Event Photography</h3>
                     <p class="service-description">Professional coverage of corporate events, birthdays, anniversaries, and special occasions.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">👤</div>
+                    <div class="service-icon"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><circle cx="32" cy="23" r="10"/><path d="M14 52c3-10 10-15 18-15s15 5 18 15"/></svg></div>
                     <h3 class="service-title">Portrait Photography</h3>
                     <p class="service-description">Stunning individual and group portraits with professional lighting and composition.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🏢</div>
+                    <div class="service-icon"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M16 52V14h24v38"/><path d="M40 28h8v24"/><path d="M22 22h4"/><path d="M30 22h4"/><path d="M22 31h4"/><path d="M30 31h4"/><path d="M22 40h4"/><path d="M30 40h4"/><path d="M12 52h40"/></svg></div>
                     <h3 class="service-title">Commercial Shoots</h3>
                     <p class="service-description">Product photography, corporate branding, and commercial content creation for businesses.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🎬</div>
+                    <div class="service-icon"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M12 24h40v28H12z"/><path d="M12 24l6-12h40l-6 12"/><path d="M23 12l-6 12"/><path d="M36 12l-6 12"/><path d="M49 12l-6 12"/><path d="M28 33l12 7-12 7z"/></svg></div>
                     <h3 class="service-title">Cinematic Videography</h3>
                     <p class="service-description">High-quality video production with professional editing, color grading, and sound design.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🎥</div>
+                    <div class="service-icon"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M14 24h27a5 5 0 0 1 5 5v18a5 5 0 0 1-5 5H14a5 5 0 0 1-5-5V29a5 5 0 0 1 5-5z"/><path d="M46 34l10-7v22l-10-7z"/><circle cx="21" cy="17" r="6"/><circle cx="35" cy="17" r="6"/></svg></div>
                     <h3 class="service-title">Reel & Short Videos</h3>
                     <p class="service-description">Creative short-form videos optimized for social media platforms and marketing.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">✨</div>
+                    <div class="service-icon"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M32 8l5.5 15L52 29l-14.5 6L32 50l-5.5-15L12 29l14.5-6L32 8z"/><path d="M50 44l2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5z"/><path d="M14 10l1.5 4 4 1.5-4 1.5-1.5 4-1.5-4-4-1.5 4-1.5L14 10z"/></svg></div>
                     <h3 class="service-title">Photo Editing & Retouching</h3>
                     <p class="service-description">Professional color grading, retouching, and enhancement to bring out the best in every image.</p>
                 </div>
